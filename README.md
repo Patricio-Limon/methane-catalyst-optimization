@@ -1,4 +1,4 @@
-# Bimetallic \(Au_xFe_y\) (\(x + y = 6\)) Clusters as Catalysts in the Oxidation of Methane, by Hydrogen Peroxide, for the \(\mathrm{CH}_3\mathrm{OH}\) Synthesis
+# Methane Catalyst Optimization
 
 This repository hosts the data structures, computational workflows, and analytical pipelines developed during my postdoctoral research. The project focuses on modeling the synergistic catalyst architecture of subnanometric gold-iron clusters for selective methane-to-methanol conversion using hybrid Density Functional Theory (DFT) and structural optimization algorithms.
 
@@ -63,19 +63,31 @@ Anthropogenic global warming is an undeniable reality, and developing strategies
 
 #### 3.1 Reaction Scheme and Catalytic Strategy
 In the absence of a catalyst, methane homolytic cracking demands an unfeasible energy envelope of $5.98\text{ eV}$. The introduction of the cluster surface triggers a 6-step mechanism to drop these constraints: (1) Adsorption, (2) Homolytic radical cleavage, (3) Methyl desorption/$\mathrm{H}_2\mathrm{O}$ yield, (4) Radical-coupling $TS$ acquisition, (5) Methanol creation, and (6) Catalytic release.
-* **Figure 1:** Reaction steps for the formation of methanol from methane oxidation (Gas-phase control).
-* **Figure 2:** Proposed 6-step radical-mediated pathway over $Au_xFe_y$ surface clusters to produce methanol.
+
+![Figure 1: Reaction steps for the formation of methanol from methane oxidation (Gas-phase control)](outputs/Figure_1.png)
+
+![Figure 2: Proposed 6-step radical-mediated pathway over AuxFey surface clusters to produce methanol](outputs/Figure_2.png)
 
 #### 3.2 Cluster Properties
-* **Geometry (Figure 3):** Ground state forms transition systematically from planar $Au_6$ configurations to highly packed, low-symmetry $3\mathrm{D}$ arrangements for iron-rich regimes.
-* **Charge Polarization (Figure 4):** NBO parameters prove a steady intramolecular charge transfer from $Fe \rightarrow Au$, transforming the iron nodes into electron-deficient environments ideal for coordination.
+Ground state forms transition systematically from planar $Au_6$ configurations to highly packed, low-symmetry $3\mathrm{D}$ arrangements for iron-rich regimes. NBO parameters prove a steady intramolecular charge transfer from $Fe \rightarrow Au$, transforming the iron nodes into electron-deficient environments ideal for coordination.
+
+![Figure 3: Cluster ground-state geometries](outputs/Figure_3.png)
+
+![Figure 4: Electrostatic potential maps](outputs/Figure_4.png)
 
 #### 3.3 Catalytic Process: \(\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O}_2 \xrightarrow{Au_xFe_y} \mathrm{CH}_3\mathrm{OH}\)
-* **Adsorption Trends (Figure 5 & 6):** Reactants attach strongly to $Fe$ nodes, driving a significant stretching elongation of organic bonds coupled with red-shifts on vibration states.
+Reactants attach strongly to $Fe$ nodes, driving a significant stretching elongation of organic bonds coupled with red-shifts on vibration states.
+
+![Figure 5: Reactant adsorption configurations](outputs/Figure_5.png)
+
+![Figure 6: Elongation & spectrographic trends](outputs/Figure_6.png)
 
 #### 3.4 Radical Formation & 3.5 C-O Coupling
-* **Figure 7:** Energetic activation barriers showing a dramatic drop in dissociation energy down to $0.18\text{ eV}$ for equiatomic allocations.
-* **Figure 8 (Linear Profile & Table):** Transition states tracking the actual $\mathrm{C-O}$ bond assembly. This visualization handles the accumulated coordinate trajectory profiles.
+Transition states tracking the actual $\mathrm{C-O}$ bond assembly. This visualization handles the accumulated coordinate trajectory profiles, noting a dramatic drop in dissociation energy down to $0.18\text{ eV}$ for equiatomic allocations.
+
+![Figure 7: Radical activation barriers](outputs/Figure_7.png)
+
+![Figure 8: Transition states & C-O coupling coordinate](outputs/Figure_8.png)
 
 ---
 
