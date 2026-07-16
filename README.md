@@ -107,7 +107,7 @@ pip install pandas matplotlib seaborn numpy scipy
 # Execute the stochastic cluster geometry modeler
 python scripts/population_fitness.py
 
-# Run the Free Energy Profile pipeline (Figure 8 Generator)
+# Run the Free Energy Profile pipeline
 python scripts/main.py
 
 # Execute Peroxide Tuning exploratory regression models
