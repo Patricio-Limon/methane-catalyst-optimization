@@ -1,0 +1,23 @@
+# Python bytecode (Archivos basura de ejecución)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración local de editores de texto
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# Bases de datos y logs locales (Protección de peso en GitHub)
+data/mis_logs.db
+data/datos_quimicos.db
+*.log
+
+# Archivos del sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
