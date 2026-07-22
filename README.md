@@ -42,7 +42,7 @@ methane-catalyst-optimization/
 ### Abstract
 The adsorption and activation of $\mathrm{CH}_4$ and $\mathrm{H}_2\mathrm{O}_2$ molecules over bimetallic $Au_xFe_y$ clusters ($x + y = 6$) for $\mathrm{CH}_3\mathrm{OH}$ formation were studied in the gas phase through the $\mathrm{H}_3\mathrm{C–H} \rightarrow \bullet\mathrm{CH}_3 + \bullet\mathrm{H}$ and $\mathrm{HO–OH} \rightarrow 2\bullet\mathrm{OH}$ bond cleavage processes. Density functional theory (DFT) calculations were performed using the PBE0 functional with the LANL2DZ effective core potential for $Au$ atoms and the Def2TZVP all-electron basis set for $Fe$ and organic atoms. From planar $Au_6$ and $Au_5Fe$ ground state (GS) structures, distorted and compact three-dimensional GS’s forms appear for $Au_2Fe_4$, $Au_3Fe_3$, $Au_2F_4$, $Au_1Fe_5$ and $Fe_6$. 
 
-Charge transfer occurs from $Fe$ to $Au$, thereby favoring the $Fe_y$ sites for nucleophilic $\mathrm{CH}_4/\mathrm{H}_2\mathrm{O}_2$ attacks. Our results show that the whole $\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O}_2 \rightarrow \mathrm{CH}_3\mathrm{OH}$ reaction, in the presence of $Au_xFe_y$ clusters, is clearly spontaneous, since the change of the free energy reaction reaches $\Delta G_{\text{react}} = -2.841\text{ eV}$ in $Au_4Fe_2$. The primary catalytic effect of $Au_xFe_y$ lies in lowering the radical formation energy from $19.60\text{ eV}$ in the gas phase to only $0.227\text{ eV}$ for the 1:1 Au:Fe composition. Computed reaction barriers for the $Au_xFe_y–\mathrm{HO}\bullet + \bullet\mathrm{CH}_3$ coupling step range from $1.349$ to $-0.269\text{ eV}$, indicating a highly favorable pathway. Among all stoichiometries, the $Au_3Fe_3$ shows the most pronounced total catalytic enhancement, highlighting the $Au/Fe$ synergistic role in promoting methane oxidation.
+Charge transfer occurs from Fe to Au, thereby favoring the $\(\mathrm{Fe}_{y}\)$ sites for nucleophilic $\(\mathrm{CH}_4/\mathrm{H}_2\mathrm{O}_2\)$ attacks. Our results show that the whole $\(\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O}_2 \rightarrow \mathrm{CH}_3\mathrm{OH}\)$ reaction, in the presence of $\(\mathrm{Au}_x\mathrm{Fe}_y\)$ clusters, is clearly spontaneous, since the reaction free energy change reaches $\(\Delta G_{\text{react}} = -2.841\text{ eV}\)$ for $\(\mathrm{Au}_4\mathrm{Fe}_2\)$. The primary catalytic effect of $\(\mathrm{Au}_x\mathrm{Fe}_y\)$ lies in lowering the radical formation energy from $\(19.60\text{ eV}\)$ in the gas phase to only $\(0.227\text{ eV}\)$ for the 1:1 $\(\mathrm{Au:Fe}\)$ composition. Computed reaction barriers for the $\(\mathrm{Au}_x\mathrm{Fe}_y\text{--}\mathrm{HO}\bullet + \bullet\mathrm{CH}_3\)$ coupling step range from $\(1.349\) to \(-0.269\text{ eV}\)$, indicating a highly favorable pathway. Among all stoichiometries, $\(\mathrm{Au}_3\mathrm{Fe}_3\)$ shows the most pronounced total catalytic enhancement, highlighting the synergistic $\(\mathrm{Au/Fe}\)$ role in promoting methane oxidation.
 
 ---
 
@@ -53,7 +53,7 @@ Anthropogenic global warming is an undeniable reality, and developing strategies
 
 ### 2. Methodology
 * **Initial Sampling Engine (`population_fitness.py`):** Implements a customized stochastic algorithm creating un-optimized atomic geometries in a bounded $6\text{ Å}$ cubic box to bypass structural stagnation in computational workflows.
-* **Theory Level:** Gas-phase optimization using the hybrid functional **PBE0** (25% Hartree–Fock exchange). Relativistic effective core potentials (**LANL2DZ**) for $Au$, and triple-$\zeta$ **Def2TZVP** all-electron basis sets for $Fe, C, O, H$.
+* **Theory Level:** Gas-phase optimization using the hybrid functional **PBE0** (25% Hartree–Fock exchange). Relativistic effective core potentials (**LANL2DZ**) for $Au$, and triple-$zeta$ **Def2TZVP** all-electron basis sets for $Fe, C, O, H$.
 * **Energy Evaluation:** ZPVE corrections calculated with harmonic frequencies. Transition states ($TS$) verified using synchronous transit-guided quasi-Newton (**STQN/QST2**) routines coupled with the Berny optimization engine.
 * **Data Persistence Engine:** Relational databases (`.db` files) store geometric structures, ionization traces (`vip_ev`, `vea_ev`), and convergence parameters via automated SQL transaction scripts.
 
@@ -62,7 +62,7 @@ Anthropogenic global warming is an undeniable reality, and developing strategies
 ### 3. Results and Discussion
 
 #### 3.1 Reaction Scheme and Catalytic Strategy
-In the absence of a catalyst, methane homolytic cracking demands an unfeasible energy envelope of $5.98\text{ eV}$. The introduction of the cluster surface triggers a 6-step mechanism to drop these constraints: (1) Adsorption, (2) Homolytic radical cleavage, (3) Methyl desorption/$\mathrm{H}_2\mathrm{O}$ yield, (4) Radical-coupling $TS$ acquisition, (5) Methanol creation, and (6) Catalytic release.
+In the absence of a catalyst, methane homolytic cracking demands an unfeasible energy envelope of $5.98\text{ eV}$. The introduction of the cluster surface triggers a 6-step mechanism to drop these constraints: (1) Adsorption, (2) Homolytic radical cleavage, (3) Methyl desorption/ $\mathrm{H}_2\mathrm{O}$ yield, (4) Radical-coupling $TS$ acquisition, (5) Methanol creation, and (6) Catalytic release.
 
 ![Figure 1: Reaction steps for the formation of methanol from methane oxidation (Gas-phase control)](outputs/Figure_1.png)
 
@@ -75,7 +75,7 @@ Ground state forms transition systematically from planar $Au_6$ configurations t
 
 ![Figure 4: Electrostatic potential maps](outputs/Figure_4.png)
 
-#### 3.3 Catalytic Process: \(\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O}_2 \xrightarrow{Au_xFe_y} \mathrm{CH}_3\mathrm{OH}\)
+#### 3.3 Catalytic Process: $\(\mathrm{CH}_4 + \mathrm{H}_2\mathrm{O}_2 \xrightarrow{Au_xFe_y} \mathrm{CH}_3\mathrm{OH}\)$
 Reactants attach strongly to $Fe$ nodes, driving a significant stretching elongation of organic bonds coupled with red-shifts on vibration states.
 
 ![Figure 5: Reactant adsorption configurations](outputs/Figure_5.png)
