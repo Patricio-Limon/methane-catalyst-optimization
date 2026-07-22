@@ -54,7 +54,7 @@ Anthropogenic global warming is an undeniable reality, and developing strategies
 
 ### 2. Methodology
 * **Initial Sampling Engine (`population_fitness.py`):** Implements a customized stochastic algorithm creating un-optimized atomic geometries in a bounded $6\text{ Å}$ cubic box to bypass structural stagnation in computational workflows.
-* **Theory Level:** Gas-phase optimization using the hybrid functional **PBE0** (25% Hartree–Fock exchange). Relativistic effective core potentials (**LANL2DZ**) for $Au$, and triple-$zeta$ **Def2TZVP** all-electron basis sets for $Fe, C, O, H$.
+* **Theory Level:** Gas-phase optimization using the hybrid functional **PBE0** (25% Hartree–Fock exchange). Relativistic effective core potentials (**LANL2DZ**) for $Au$, and triple-zeta **Def2TZVP** all-electron basis sets for $Fe, C, O, H$.
 * **Energy Evaluation:** ZPVE corrections calculated with harmonic frequencies. Transition states ($TS$) verified using synchronous transit-guided quasi-Newton (**STQN/QST2**) routines coupled with the Berny optimization engine.
 * **Data Persistence Engine:** Relational databases (`.db` files) store geometric structures, ionization traces (`vip_ev`, `vea_ev`), and convergence parameters via automated SQL transaction scripts.
 
